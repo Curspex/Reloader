@@ -48,7 +48,7 @@ public class Utils {
         boolean there = false;
         
         for(Plugin pl : pm.getPlugins())
-        	if(pl.getName().toLowerCase().startsWith(pluginName))
+        	if(pl.getName().equalsIgnoreCase(pluginName) || pl.getName().toLowerCase().startsWith(pluginName))
         		there = true;
         
         if(there) {
@@ -109,7 +109,7 @@ public class Utils {
         boolean there = false;
         
         for(Plugin pl : pm.getPlugins())
-        	if(pl.getName().toLowerCase().startsWith(pluginName))
+        	if(pl.getName().equalsIgnoreCase(pluginName) || pl.getName().toLowerCase().startsWith(pluginName))
         		there = true;
         
         if(there) {
@@ -172,7 +172,7 @@ public class Utils {
         boolean there = false;
         
         for(Plugin pl : pm.getPlugins())
-        	if(pl.getName().toLowerCase().startsWith(pluginName))
+        	if(pl.getName().equalsIgnoreCase(pluginName) || pl.getName().toLowerCase().startsWith(pluginName))
         		there = true;
         
         if(there) {
