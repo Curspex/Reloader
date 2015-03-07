@@ -18,12 +18,3 @@ Features
 * /reloader use <Plugin> -- Gives info on how to use <plugin>
 * /reloader perm [Player] <Permission> -- Tells you if you or [Player] has <Permission>
 * /reloader list -- List plugins in alphabetical order and sorts them by enabled or disabled
-
-Extras
-------
-
-### Binary can be found here
-Reloader.jar in the main directory is updated with every push to git
-
-### Metrics
-This plugin uses [Metrics] (http://mcstats.org/) to gather Anonomys statistics(no ip/username logging just general player and server count) and i request that you allow it to run.
