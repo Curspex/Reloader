@@ -65,20 +65,20 @@ public class Utils {
 	            	try {
 						name = ReloaderListener.plugin.getPluginLoader().getPluginDescription(compare).getName();
 					} catch (InvalidDescriptionException e) {
-						System.out.print(compare.getName() + "didn't match");
+						System.out.print(compare.getName() + " didn't match");
 					}
 	            	if(name.toLowerCase().startsWith(pluginName.toLowerCase())) {
 	            		files.add(compare);
 	            		try {
 							Bukkit.getServer().getPluginManager().loadPlugin(compare);
 						} catch (UnknownDependencyException e) {
-							System.out.print(compare.getName() + "is missing a dependant plugin");
+							System.out.print(compare.getName() + " is missing a dependant plugin");
 							return;
 						} catch (InvalidPluginException e) {
-							System.out.print(compare.getName() + "is not a plugin");
+							System.out.print(compare.getName() + " is not a plugin");
 							return;
 						} catch (InvalidDescriptionException e) {
-							System.out.print(compare.getName() + "has an incorrect description");
+							System.out.print(compare.getName() + " has an incorrect description");
 							return;
 						}
 	            	}
